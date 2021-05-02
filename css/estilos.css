@@ -1,0 +1,284 @@
+#grilla{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 15% 3% 75% 7%;
+    grid-template-areas: 
+                         "header"
+                          "menu"
+                          "main"
+                          "footer"
+}
+
+header{
+    background-color: white;
+    height: 185px;
+    grid-area: "header";
+}
+
+footer{
+    background-color: violet;
+    grid-area: "footer";
+    height: 100px;
+
+    
+}
+nav{
+    grid-area: "menu";
+}
+main{
+    grid-area: "main";
+}
+
+body{
+    background-color: rgb(219, 197, 219);
+    margin: 0;
+}
+
+section{
+    padding: 20px;   
+    margin: 10px;
+    
+}
+
+
+h1{
+    color: rgb(179, 15, 170);
+    text-align: center;
+    font-weight: 800;
+    font-size: 80px;
+    font-family: 'Redressed', cursive;
+    word-spacing: 5px;
+    text-transform: capitalize;
+}
+
+fieldset{
+    color: rgb(141, 18, 179);
+}
+
+p{
+    color: rgb(78, 12, 80);
+    font-weight: 500;
+    font-size: 30px;
+    text-transform: capitalize;
+    font-family: 'Vidaloka', serif;
+    word-spacing: 15px;
+    
+   
+}
+
+h3{
+    color: rgb(179, 15, 170);
+    font-size: 40px; 
+    font-family: 'Redressed', cursive;
+}
+
+.imgGaleria{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    margin: auto;
+    
+}
+
+.imgNosotros{
+    margin-left: 450px;
+}
+
+
+.itemGrid{
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    margin: 20px;
+    width: 80%;
+    overflow: hidden;
+}
+
+.item-1{
+    grid-column: 1/span 5;
+    grid-row: 2;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+    
+}
+
+.item-2{
+    grid-column: 8/span 11;
+    grid-row: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.imgItem{
+    grid-column: 5/span 10;
+}
+
+
+
+.emailFooter{
+    color: rgb(179, 15, 170);
+    font-size: 13px;
+    text-align: right;
+    text-transform: none;
+    
+}
+
+.copyR{
+    font-size: 10px;
+    text-align: center;
+    text-transform: none;
+}
+
+
+.redes{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+   
+}
+
+.logoRedes{
+    width: 40px;
+}
+
+#logo{
+    width: 300px;
+    margin-left: 5px;
+    margin-top: 5px;
+    height: 85%;
+}
+
+
+.imgIndex{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    justify-items: center;
+    align-items: center;
+}
+
+
+
+
+a{
+    color: black;
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+
+.formContacto{
+    text-align: center;
+    
+}
+
+#carouselExampleSlidesOnly{
+    margin-left: 400px;
+}
+
+@media only screen and (max-width: 768px){
+    #grilla{
+        grid-template-columns: 100%;
+        grid-template-rows: 15% 15% 65% 5%;
+}
+    .listaGrid{
+        grid-template-columns: 100%;
+        grid-template-rows: 20% 20% 20% 20% 20%;
+        background-color: rgb(250, 81, 208);
+}
+
+    .imgIndex{
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 25% 25% 25% 25%;
+        row-gap: 100px;
+        margin-top: 40px;
+
+    }
+
+    .imgItem{
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    #grilla{
+        grid-template-columns: 100%;
+        grid-template-rows: 15% 15% 65% 5%;
+}
+    .listaGrid{
+        grid-template-columns: 100%;
+        grid-template-rows: 20% 20% 20% 20% 20%;
+        background-color: blueviolet;
+}
+
+    .imgIndex{
+        grid-template-columns: 100%;
+        grid-template-rows: 25% 25% 25% 25%;
+        row-gap: 100px;
+        margin-top: 40px;
+
+    }
+
+    #carouselExampleSlidesOnly{
+        margin: 10%;
+    }
+
+}
+
+@media only screen and (max-width: 320px){
+    #grilla{
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+}
+    .listaGrid{
+        grid-template-columns: 100%;
+        grid-template-rows: 20% 20% 20% 20%;
+        background-color: rgb(121, 211, 214);
+}
+
+    .imgIndex{
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+        row-gap: 100px;
+        margin-top: 40px;
+
+    }
+
+    .pServicios{
+        font-size: 10px;
+    }
+
+    .item-1, h3{
+        font-size: 17px;
+    }
+
+    #carouselExampleSlidesOnly{
+        margin: 0%;
+    }
+
+    
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
